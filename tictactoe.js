@@ -1,9 +1,9 @@
 if (Meteor.isClient) {
-  Template.hello.greeting = function () {
-    return "Welcome to tictactoe.";
+  Template.game.greeting = function () {
+    return "Welcome to tictactoe";
   };
 
-  Template.hello.events({
+  Template.game.events({
     'click input' : function () {
       // template data, if any, is available in 'this'
       if (typeof console !== 'undefined')
